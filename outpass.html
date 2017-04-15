@@ -1,0 +1,272 @@
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+<title>Hostel Help Desk</title>
+</head>
+
+
+<body id="page-top">
+<!-- Uses a transparent header that draws on top of the layout's background -->
+<style>
+
+.demo-layout-transparent {
+  background: url('img/header-bg.jpg') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: black;
+}
+#signUp{
+    margin-top: 1rem;
+
+}
+#Year{
+    margin-top: 1rem;
+  }
+  #HostelName{
+      margin-top: 1rem;
+    }
+</style>
+
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Hostel Help Desk</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <!-- <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav> -->
+    </div>
+  </header>
+  <!--  -
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Hostel Help Desk</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+    </nav>
+  </div>
+-->
+  <main class="mdl-layout__content">
+
+  <center class="loginForm">
+    <h3>Outpass</h3>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <input class="mdl-textfield__input" type="text" id="sample3">
+      <label class="mdl-textfield__label" for="sample3">Student's Name</label>
+    </div><br>
+
+
+    <table>
+    <p>  <form action="#">
+    <div class="mdl-textfield mdl-js-textfield">
+      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+      <label class="mdl-textfield__label" for="sample2">Room No</label>
+      <span class="mdl-textfield__error">Input is not a number!</span>
+    </div>
+  </form>
+
+  <form action="#">
+  <div class="mdl-textfield mdl-js-textfield">
+  <input class="mdl-textfield__input" type="text" id="sample1">
+  <label class="mdl-textfield__label" for="sample1">Reg no</label>
+  </div>
+  </form>
+</p>
+  <p> <tr><td>Hostel Name</td></tr>
+     <tr><td>
+       <label id="HostelName">
+        <label class="mdl-checkbox mdl-js-checkbox" for="checkbox1">
+           <input type="checkbox" id="checkbox1" class="mdl-checkbox__input" checked>
+           <span class="mdl-checkbox__label">bh-1</span>
+        </label>
+   </td>
+     <td>
+        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox2">
+           <input type="checkbox" id="checkbox2" class="mdl-checkbox__input">
+           <span class="mdl-checkbox__label">bh-2</span>
+        </label>
+   </td>
+   <td>
+      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox3">
+         <input type="checkbox" id="checkbox3" class="mdl-checkbox__input">
+         <span class="mdl-checkbox__label">bh-3</span>
+      </label>
+      <td>
+         <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox4">
+            <input type="checkbox" id="checkbox4" class="mdl-checkbox__input">
+            <span class="mdl-checkbox__label">OMV</span>
+         </label>
+         <td>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox5">
+               <input type="checkbox" id="checkbox5" class="mdl-checkbox__input">
+               <span class="mdl-checkbox__label">SSH</span>
+            </label>
+      <td>
+        <td>
+           <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox6">
+              <input type="checkbox" id="checkbox6" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">CMH</span>
+           </label>
+           </label
+    </td>
+  </tr> </p>
+  <p>   <form action="#">
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" id="sample1">
+    <label class="mdl-textfield__label" for="sample1">Dept</label>
+  </div>
+</form>
+<div class="mdl-textfield mdl-js-textfield">
+  <input class="mdl-textfield__input" type="text" id="sample1">
+  <label class="mdl-textfield__label" for="sample1">Section</label>
+</div>
+</form> </p>
+<p>
+<tr><td>Year</td></tr>
+          <tr>   <label id="Year"> <td>
+
+         <label class="mdl-radio mdl-js-radio" for="option1">
+            <input type="radio" id="option1" name="Year" class="mdl-radio__button" checked>
+            <span class="mdl-radio__label">1st</span>
+         </label>
+	  </td>
+      <td>
+         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option2">
+            <input type="radio" id="option2" name="Year" class="mdl-radio__button" >
+            <span class="mdl-radio__label">2nd</span>
+         </label>
+	  </td>
+    <td>
+       <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option2">
+          <input type="radio" id="option2" name="Year" class="mdl-radio__button" >
+          <span class="mdl-radio__label">3rd</span>
+       </label>
+ </td>
+ <td>
+    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option2">
+       <input type="radio" id="option2" name="Year" class="mdl-radio__button" >
+       <span class="mdl-radio__label">4th</span>
+    </label>
+
+</td>
+</label>
+      </tr>
+    </p>
+      <tr><td>College Name</td></tr>
+      <tr><td>
+         <label class="mdl-checkbox mdl-js-checkbox" for="checkbox6">
+            <input type="checkbox" id="checkbox6" class="mdl-checkbox__input" checked>
+            <span class="mdl-checkbox__label">SRMU</span>
+         </label>
+    </td>
+      <td>
+         <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox7">
+            <input type="checkbox" id="checkbox7" class="mdl-checkbox__input">
+            <span class="mdl-checkbox__label">Eshwari</span>
+         </label>
+    </td>
+    <td>
+       <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox8">
+          <input type="checkbox" id="checkbox8" class="mdl-checkbox__input">
+          <span class="mdl-checkbox__label">SRMDC</span>
+       </label>
+     </td>
+      </tr>
+  <p>    <form action="#">
+    <div class="mdl-textfield mdl-js-textfield">
+      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample6">
+      <label class="mdl-textfield__label" for="sample2">Contact Number(Student)</label>
+      <span class="mdl-textfield__error">Input is not a number!</span>
+    </div>
+  </form>
+  <form action="#">
+<div class="mdl-textfield mdl-js-textfield">
+  <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample7">
+  <label class="mdl-textfield__label" for="sample2">Contact Number(Home)</label>
+  <span class="mdl-textfield__error">Input is not a number!</span>
+</div>
+</form>
+<form action="#">
+<div class="mdl-textfield mdl-js-textfield">
+<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample8">
+<label class="mdl-textfield__label" for="sample2">Contact Number(L.G)</label>
+<span class="mdl-textfield__error">Input is not a number!</span>
+</div>
+</form>
+</p>
+<form action="#">
+<div class="mdl-textfield mdl-js-textfield">
+  <input class="mdl-textfield__input" type="text" id="sample8">
+  <label class="mdl-textfield__label" for="sample1">Reason for leave</label>
+</div>
+</form>
+<p><form action="#">
+<div class="mdl-textfield mdl-js-textfield">
+  <input class="mdl-textfield__input" type="text" id="sample9">
+  <label class="mdl-textfield__label" for="sample1">Date out</label>
+</div>
+</form>
+<form action="#">
+<div class="mdl-textfield mdl-js-textfield">
+  <input class="mdl-textfield__input" type="text" id="sample`10">
+  <label class="mdl-textfield__label" for="sample1">Date in</label>
+</div>
+</form></P
+<p><form action="#">
+<div class="mdl-textfield mdl-js-textfield">
+  <input class="mdl-textfield__input" type="text" id="sample11">
+  <label class="mdl-textfield__label" for="sample1">Time out</label>
+</div>
+</form>
+<form action="#">
+<div class="mdl-textfield mdl-js-textfield">
+  <input class="mdl-textfield__input" type="text" id="sample12">
+  <label class="mdl-textfield__label" for="sample1">Time in</label>
+</div>
+</form></P
+<p>
+  <form action="#">
+    <div class="mdl-textfield mdl-js-textfield">
+      <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample13" ></textarea>
+      <label class="mdl-textfield__label" for="sample5">Address for communication</label>
+    </div>
+  </form></p>
+<p><form action="#">
+<div class="mdl-textfield mdl-js-textfield">
+<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample14">
+<label class="mdl-textfield__label" for="sample2">PIN CODE</label>
+<span class="mdl-textfield__error">Input is not a number!</span>
+</div>
+</form></p>
+
+  </table>
+
+    <button id="signUp"class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+        sign up
+    </button>
+
+  </center>
+
+
+  </main>
+</div>
+
+</body>
+</html>
