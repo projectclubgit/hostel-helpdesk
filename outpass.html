@@ -67,7 +67,7 @@
           </div><br>
 
           <table>
-            <p>  
+            <p>
               <form action="#">
                 <div class="mdl-textfield mdl-js-textfield">
                   <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="roomNo">
@@ -81,55 +81,45 @@
                 <label class="mdl-textfield__label" for="regno">Reg no</label>
               </div>
             </p>
-            <p> 
-              <tr><td>Hostel Name</td></tr>
-              <tr>
-                <td>
-                  <label class="mdl-checkbox mdl-js-checkbox" for="checkbox1">
-                     <input type="checkbox" id="checkbox1" class="mdl-checkbox__input" checked>
-                     <span class="mdl-checkbox__label">bh-1</span>
-                  </label>
-                </td>
-                <td>
-                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox2">
-                     <input type="checkbox" id="checkbox2" class="mdl-checkbox__input">
-                     <span class="mdl-checkbox__label">bh-2</span>
-                  </label>
-                </td>
-                <td>
-                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox3">
-                    <input type="checkbox" id="checkbox3" class="mdl-checkbox__input">
-                    <span class="mdl-checkbox__label">bh-3</span>
-                  </label>
-                </td>
+            <p>
+            <tr><td>Year</td></tr>
+                      <tr>   <label id="Year"> <td>
 
-                <td>
-                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox4">
-                    <input type="checkbox" id="checkbox4" class="mdl-checkbox__input">
-                    <span class="mdl-checkbox__label">OMV</span>
-                  </label>
+                     <label class="mdl-radio mdl-js-radio" for="bh-1">
+                        <input type="radio" id="bh-1" name="Year" class="mdl-radio__button" checked>
+                        <span class="mdl-radio__label">bh-1</span>
+                     </label>
+                </td>
+                  <td>
+                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="bh-2">
+                        <input type="radio" id="bh-2" name="Year" class="mdl-radio__button" >
+                        <span class="mdl-radio__label">bh-2</span>
+                     </label>
                 </td>
                 <td>
-                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox5">
-                    <input type="checkbox" id="checkbox5" class="mdl-checkbox__input">
-                    <span class="mdl-checkbox__label">SSH</span>
-                  </label>
-                </td>
-                <td>
-                   <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox6">
-                      <input type="checkbox" id="checkbox6" class="mdl-checkbox__input">
-                      <span class="mdl-checkbox__label">CMH</span>
+                   <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="bh-3">
+                      <input type="radio" id="bh-3" name="Year" class="mdl-radio__button" >
+                      <span class="mdl-radio__label">bh-3</span>
                    </label>
-                </td>
-              </tr> 
-            </p>
+             </td>
+             <td>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="omv">
+                   <input type="radio" id="omv" name="Year" class="mdl-radio__button" >
+                   <span class="mdl-radio__label">omv</span>
+                </label>
+
+            </td>
+            </label>
+                  </tr>
+                </p>
+
             <p>   <form action="#">
         <div class="mdl-textfield mdl-js-textfield">
           <input class="mdl-textfield__input" type="text" id="dept">
           <label class="mdl-textfield__label" for="dept">Dept</label>
         </div>
       </form>
-      <div class="mdl-textfield mdl-js-textfield">
+      <div class="mdl-textfield mdl-js-textfield">/
         <input class="mdl-textfield__input" type="text" id="section">
         <label class="mdl-textfield__label" for="section">Section</label>
       </div>
@@ -144,20 +134,20 @@
                </label>
       	  </td>
             <td>
-               <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option2">
-                  <input type="radio" id="option2" name="Year" class="mdl-radio__button" >
+               <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="2nd">
+                  <input type="radio" id="2nd" name="Year" class="mdl-radio__button" >
                   <span class="mdl-radio__label">2nd</span>
                </label>
       	  </td>
           <td>
-             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option2">
-                <input type="radio" id="option2" name="Year" class="mdl-radio__button" >
+             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="3rd">
+                <input type="radio" id="3rd" name="Year" class="mdl-radio__button" >
                 <span class="mdl-radio__label">3rd</span>
              </label>
        </td>
        <td>
-          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option2">
-             <input type="radio" id="option2" name="Year" class="mdl-radio__button" >
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="4th">
+             <input type="radio" id="4th" name="Year" class="mdl-radio__button" >
              <span class="mdl-radio__label">4th</span>
           </label>
 
@@ -166,25 +156,35 @@
             </tr>
           </p>
             <tr><td>College Name</td></tr>
-            <tr><td>
-               <label class="mdl-checkbox mdl-js-checkbox" for="checkbox6">
-                  <input type="checkbox" id="checkbox6" class="mdl-checkbox__input" checked>
-                  <span class="mdl-checkbox__label">SRMU</span>
-               </label>
-          </td>
-            <td>
-               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox7">
-                  <input type="checkbox" id="checkbox7" class="mdl-checkbox__input">
-                  <span class="mdl-checkbox__label">Eshwari</span>
-               </label>
-          </td>
-          <td>
-             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox8">
-                <input type="checkbox" id="checkbox8" class="mdl-checkbox__input">
-                <span class="mdl-checkbox__label">SRMDC</span>
-             </label>
-           </td>
-            </tr>
+            <tr>   <label id="Year"> <td>
+
+           <label class="mdl-radio mdl-js-radio" for="SRM">
+              <input type="radio" id="SRM" name="Year" class="mdl-radio__button" checked>
+              <span class="mdl-radio__label">SRM</span>
+           </label>
+      </td>
+        <td>
+           <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="EASHWARI">
+              <input type="radio" id="EASHWARI" name="Year" class="mdl-radio__button" >
+              <span class="mdl-radio__label">EASHWARI</span>
+           </label>
+      </td>
+      <td>
+         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="SRM DENTAL">
+            <input type="radio" id="SRM DENTAL" name="Year" class="mdl-radio__button" >
+            <span class="mdl-radio__label">SRM DENTAL</span>
+         </label>
+   </td>
+   <td>
+      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="SRM B-ARCH">
+         <input type="radio" id="SRM B-ARCH" name="Year" class="mdl-radio__button" >
+         <span class="mdl-radio__label">SRM B-ARCH</span>
+      </label>
+
+  </td>
+  </label>
+        </tr>
+
         <p>    <form action="#">
           <div class="mdl-textfield mdl-js-textfield">
             <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="contact-student">
