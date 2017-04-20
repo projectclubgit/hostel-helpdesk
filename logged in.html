@@ -6,67 +6,65 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
 <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-<script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
 
 <title>Hostel Help Desk</title>
 </head>
+
+
+<body id="page-top">
+<!-- Uses a transparent header that draws on top of the layout's background -->
 <style>
-.mdl-layout__drawer-button{
-  visibility: hidden;
+.demo-layout-transparent {
+  background: url('img/header-bg.jpg') center / cover;
 }
-
-
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: black;
+}
 #signUp{
     margin-top: 15rem;
 }
 
 </style>
-<body>
 
-<!-- Always shows a header, even in smaller screens. -->
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title">Hostel Help Desk</span>
+      <span class="mdl-layout-title">Hostel help desk</span>
       <!-- Add spacer, to align navigation to the right -->
-      <!-- <div class="mdl-layout-spacer"></div> -->
-      <!-- Navigation. We hide it in small screens. -->
-      <!-- <nav class="mdl-navigation mdl-layout--large-screen-only">
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="">Link</a>
         <a class="mdl-navigation__link" href="">Link</a>
         <a class="mdl-navigation__link" href="">Link</a>
         <a class="mdl-navigation__link" href="">Link</a>
-      </nav> -->
+      </nav>
     </div>
   </header>
   <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Hostel Help Desk</span>
-    <!-- <nav class="mdl-navigation">
+    <span class="mdl-layout-title">Hostel help desk</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="outpass.html">Outpass</a>
       <a class="mdl-navigation__link" href="">Link</a>
       <a class="mdl-navigation__link" href="">Link</a>
       <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-    </nav> -->
+    </nav>
   </div>
   <main class="mdl-layout__content">
-    <div class="page-content">
+
+  <!-- Accent-colored raised button for sign up -->
+  <center id="signUp">
+    <h2>You have been logged in</h2>
+</center>
 
 
-      <center id="signUp">
-      <a href="login.html">
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-            Get started
-        </button>
-      </a>
-      </center>
-    </div>
+
   </main>
 </div>
 
-
 </body>
-<script src="js/config.js"></script>
-<script src="js/auth.js"></script>
-
 </html>
