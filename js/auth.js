@@ -40,6 +40,12 @@ firebase.auth().onAuthStateChanged(function(user) {
         window.location="app.html";
       }
       break;
+      case "/fac_login.html":
+      {
+        window.location="fac_dash.html";
+      }
+      break;
+
       default:
       break;
 
@@ -49,6 +55,7 @@ firebase.auth().onAuthStateChanged(function(user) {
       case "/login.html": break;
       case "/SignUp.html": break;
       case "/index.html": break;
+      case "/fac_login.html":break;
       default: window.location = "login.html"; break;
     }
   }
