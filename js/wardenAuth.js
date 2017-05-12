@@ -27,9 +27,9 @@ firebase.auth().onAuthStateChanged(function(user) {
     console.log("loggedIn");
     switch (window.location.pathname) {
 
-      case "/fac_login.html":
+      case "/wardenlogin.html":
       {
-        window.location="notify.html";
+        window.location="warden_dash.html";
       }
       break;
 
