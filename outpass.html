@@ -24,7 +24,9 @@
   #HostelName{
       margin-top: 1rem;
     }
-
+#submit{
+         margin-top: 3rem;
+}
 </style>
 <!-- Always shows a header, even in smaller screens. -->
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -80,7 +82,7 @@
               </div>
             </p>
             <p>
-            <tr><td>Year</td></tr>
+            <tr><td><b>Hostel Name</b></td></tr>
                       <tr>   <label id="Year"> <td>
 
                      <label class="mdl-radio mdl-js-radio" for="bh-1">
@@ -123,7 +125,7 @@
       </div>
       </form> </p>
       <p>
-      <tr><td>Year</td></tr>
+      <tr><td><b>Year</b></td></tr>
                 <tr>   <label id="Year"> <td>
 
                <label class="mdl-radio mdl-js-radio" for="option1">
@@ -153,7 +155,7 @@
       </label>
             </tr>
           </p>
-            <tr><td>College Name</td></tr>
+            <tr><td><b>College Name</b></td></tr>
             <tr>   <label id="Year"> <td>
 
            <label class="mdl-radio mdl-js-radio" for="SRM">
@@ -249,7 +251,7 @@
 
         </table>
 
-          <button onclick="submitOutpass()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+          <button id="submit"onclick="submitOutpass()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
               Submit
           </button>
 

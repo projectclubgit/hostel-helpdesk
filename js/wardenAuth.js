@@ -39,12 +39,10 @@ firebase.auth().onAuthStateChanged(function(user) {
 
     }
   } else {
-    // switch (window.location.pathname) {
-    //   case "/login.html": break;
-    //   case "/SignUp.html": break;
-    //   case "/index.html": break;
-    //   case "/fac_login.html":break;
-    //   default: window.location = "login.html"; break;
-    // }
+  //  switch (window.location.pathname) {
+  //    case "/wardenlogin.html": break;
+  //    default: window.location = "login.html"; break;
+    //}
+		window.location = "/wardenlogin.html";
   }
 });
