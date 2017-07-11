@@ -57,13 +57,14 @@ firebase.auth().onAuthStateChanged(function(user) {
     }
   } else {
     console.log(window.location.pathname);
-    switch (window.location.pathname) {
-      case "/login.html": break;
-      case "/SignUp.html": break;
-      case "/index.html":  break;
-      case "/": break;
-      case "/fac_login.html":break;
-      case "/wardenlogin.html":break;
+    const path = window.location.pathname.split("/");
+    switch (path[path.length - 1]) {
+      case "login.html": break;
+      case "SignUp.html": break;
+      case "index.html":  break;
+      case "": break;
+      case "fac_login.html":break;
+      case "wardenlogin.html":break;
       default: window.location = "login.html"; break;
     }
   }
