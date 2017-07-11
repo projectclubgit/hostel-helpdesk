@@ -5,19 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <title>Hostel Help Desk</title>
 </head>
 <body>
 <style>
+	#signUp{
+		margin-top: 15rem;
+	}
 
+	.demo-card-square.mdl-card {
+		width: 91%;
+		margin: 2rem;
+	}
 
-#signUp{
-    margin-top: 15rem;
-}
-
+	.right-float{
+		float: right;
+	}
 </style>
 <!-- Always shows a header, even in smaller screens. -->
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -51,29 +61,11 @@
     <div class="page-content">
       <!-- Square card -->
   <style>
-  .demo-card-square.mdl-card {
-    width: 320px;
-    margin: 2rem;
-  }
-  .demo-card-square > .mdl-card__title {
-  }
+
   </style>
 
   <div id="list-of-outpass">
     
-    <div class="demo-card-square mdl-card mdl-shadow--2dp">
-    <div class="mdl-card__title mdl-card--expand">
-      <h2 class="mdl-card__title-text">Arun Iyer</h2>
-    </div>
-    <div class="mdl-card__supporting-text">
-      Reason for Outpass
-    </div>
-    <div class="mdl-card__actions mdl-card--border">
-      <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-        View 
-      </button>
-    </div>
-  </div>
 
   </div>
 
@@ -90,3 +82,21 @@
 <script src="js/notify.js"></script>
 
 </html>
+
+<div class="modal fade" id="show-full-form" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Outpass Application</h4>
+      </div>
+      <div id="more-details" class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+        <button id="close-add-modal" type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+        <button onclick="" type="button" class="btn btn-primary">Accept</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
